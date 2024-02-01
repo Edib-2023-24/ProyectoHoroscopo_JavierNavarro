@@ -131,7 +131,8 @@ html {
 .animalmain {
   display: grid;
   grid-template-columns: 50% 1% auto 5% 18%;
-  grid-template-rows: 25% repeat(auto, 4fr);
+  grid-template-rows: 25% repeat(5, 1fr);
+  row-gap: 20px;
 
 
   & .animal {
