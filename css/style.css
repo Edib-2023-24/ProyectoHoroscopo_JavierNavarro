@@ -17,3 +17,177 @@
 /* Colores */
 
 /* ******************************** */
+
+html {
+  background-image: url("../svg/fondo.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 100vw;
+  display: grid;
+  justify-items: center;
+
+  .header {
+    height: 175px;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 65px;
+    }
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    gap: 10px;
+    width: 70vh;
+    height: 70vh;
+
+    & .puntero {
+      grid-column: 6/16;
+      grid-row: 6/16;
+    }
+
+    & .serpiente {
+      grid-column: 11/14;
+      grid-row: 4/7;
+    }
+
+    & .gallo {
+      grid-column: 14/17;
+      grid-row: 5/8;
+    }
+
+    & .dragon {
+      grid-column: 16/19;
+      grid-row: 7/13;
+    }
+
+    & .rata {
+      grid-column: 15/19;
+      grid-row: 13/16;
+      transform: scaleX(-1);
+    }
+
+    & .caballo {
+      grid-column: 13/17 ;
+      grid-row: 16/19;
+      transform: scaleX(-1);
+    }
+
+    & .buey {
+      grid-column: 9/13;
+      grid-row: 16/19;
+    }
+
+    & .cabra {
+      grid-column: 5/9;
+      grid-row: 15/18;
+      transform: scaleX(-1);
+    }
+
+    & .mono {
+      width: 80%;
+      grid-column: 3/7;
+      grid-row: 12/14;
+      transform: scaleX(-1);
+    }
+
+    & .tigre {
+      width: 80%;
+      grid-column: 1/7;
+      grid-row: 9/12;
+      transform: scaleX(-1)
+    }
+
+    & .perro {
+      width: 80%;
+      grid-column: 3/9;
+      grid-row: 5/9;
+      transform: scaleX(-1)
+    }
+
+    & .cerdo {
+      width: 75%;
+      grid-column: 8/12;
+      grid-row: 4/6;
+    }
+
+    & a:hover{
+      scale: 1.2;
+      cursor: pointer;
+    }
+  }
+}
+
+/* ANIMALES */
+.animalmain {
+  display: grid;
+  grid-template-columns: 50% 1% auto 5% 18%;
+  grid-template-rows: 25% repeat(auto, 4fr);
+
+
+  & .animal {
+    grid-column: 1/2;
+    grid-row: 1/6;
+    align-self: center;
+    width: 500px;
+  }
+
+  & .linea1 {
+    border-right: 2px solid white;
+    grid-column: 2/3;
+    grid-row: 1/6;
+  }
+
+  & .linea2 {
+    border-top: 2px solid white;
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+
+  /*& .corazon {
+    grid-column: 3/5;
+    grid-row: 2/3;
+    justify-self: center
+  }*/
+
+  & .linea3 {
+    border-left: 2px solid white;
+    grid-column: 4/5;
+    grid-row: 1/6;
+  }
+
+  & .compatibilidad1 {
+    grid-column: 5/6;
+    grid-row: 1/2;
+  }
+
+  & .compatibilidad2 {
+    grid-column: 5/6;
+    grid-row: 2/5;
+    transform: scaleX(-1);
+    align-self: center;
+  }
+
+  & .compatibilidad3 {
+    grid-column: 5/6;
+    grid-row: 5/6;
+    width: 80%;
+    transform: scaleX(-1);
+  }
+
+  & .nombre {
+    color: white;
+    grid-column: 1/2;
+    grid-row: 6/7;
+    text-align: center;
+  }
+}
